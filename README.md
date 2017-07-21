@@ -7,4 +7,4 @@ Stars](https://img.shields.io/github/contributors/cloudycube/docker-wordpress.sv
 Forks](https://img.shields.io/github/forks/cloudycube/docker-wordpress.svg?label=github%20forks)](https://github.com/cloudycube/docker-wordpress)
 
 ## Overview
-This Docker image derives from the [docker-nginx-php7](https://github.com/cloudycube/docker-nginx-php7) image and installs the latest version Wordpress 4.x that is available on GitHub.
+This Docker image derives from the [docker-nginx-php7](https://github.com/cloudycube/docker-nginx-php7) image and installs the latest version of [Wordpress 4.x](https://github.com/WordPress/WordPress) that is available on GitHub.
