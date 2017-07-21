@@ -9,13 +9,13 @@ DATABASE_PASSWORD='<your database password>'
 DATABASE_NAME='<your database name>'
 
 docker run -it \
-           --name wordpress-test \
+           --name wordpress \
            --env WORDPRESS_DB_HOST="$DATABASE_HOST" \
            --env WORDPRESS_DB_USER="$DATABASE_NAME" \
            --env WORDPRESS_DB_PASSWORD="$DATABASE_PASSWORD" \
            --env WORDPRESS_DB_NAME="$DATABASE_NAME" \
            --env WORDPRESS_TABLE_PREFIX="wp_" \
            --env CC_STARTUP_VERBOSITY=4 \
-           cloudycube/docker-wordpress \
+           cloudycube/wordpress \
            run-and-enter
 

@@ -129,14 +129,14 @@ class WordPress(Service):
             text = replace_php_define(   text, 'NONCE_SALT',       self._nonce_salt       if self._nonce_salt       else generate_password(64))
             text = replace_php_variable( text, 'table_prefix',     self._table_prefix     if self._table_prefix     else 'wp_')
 
-        # let wordpress believe that it is talking SSL itself, if a SSL termination proxy has stripped off the SSL layer
-        text_to_insert = "" \
-            "if($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {" \
-            "    $_SERVER['HTTPS'] = 'on';" \
-            "    $_SERVER['SERVER_PORT'] = 443;" \
-            "}"
-        end_of_config_section = text.find('/* That\'s all, stop editing! Happy blogging. */')
-        text = text[:end_of_config_section] + text_to_insert + text[end_of_config_section:]
+            # let wordpress believe that it is talking SSL itself, if a SSL termination proxy has stripped off the SSL layer
+            text_to_insert = "" \
+                "if($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {\n" \
+                "    $_SERVER['HTTPS'] = 'on';\n" \
+                "    $_SERVER['SERVER_PORT'] = 443;\n" \
+                "}\n"
+            end_of_config_section = text.find('/* That\'s all, stop editing! Happy blogging. */')
+            text = text[:end_of_config_section] + text_to_insert + text[end_of_config_section:]
         
         # write configuraton file
         # ---------------------------------------------------------------------------------------
