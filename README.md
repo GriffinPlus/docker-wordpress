@@ -57,7 +57,7 @@ Default Value: `wp_`
 
 #### WordPress Security Keys
 
-The following environment variables force security keys (AUTH_KEY, AUTH_SALT, SECURE_AUTH_KEY, SECURE_AUTH_SALT, LOGGED_IN_KEY, LOGGED_IN_SALT, NONCE_KEY and NONCE_SALT) to be set in `wp_config.php`. A random character sequence is generated, if `wp_config.php` is created initially. The setting in `wp_config.php` is not touched, if `wp_config.php` does already exist and the corresponding environment variables are not specified.
+The following environment variables force security keys (AUTH_KEY, AUTH_SALT, SECURE_AUTH_KEY, SECURE_AUTH_SALT, LOGGED_IN_KEY, LOGGED_IN_SALT, NONCE_KEY and NONCE_SALT) to be set in `wp_config.php`. A random character sequence is generated, if `wp_config.php` is created initially. The setting in `wp_config.php` is not touched, if `wp_config.php` already exists and the corresponding environment variables are not specified.
 
 - WORDPRESS_AUTH_KEY
 - WORDPRESS_AUTH_SALT
