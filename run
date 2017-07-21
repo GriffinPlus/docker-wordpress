@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# This script starts a new instance of the cloudycube/docker-wordpress container and opens a shell in it.
+# It is useful in cases where some debugging is needed...
+
+DATABASE_HOST='<your database host>'
+DATABASE_USER='<your database user>'
+DATABASE_PASSWORD='<your database password>'
+DATABASE_NAME='<your database name>'
+
+docker run -it \
+           --name wordpress-test \
+           --env WORDPRESS_DB_HOST="$DATABASE_HOST" \
+           --env WORDPRESS_DB_USER="$DATABASE_NAME" \
+           --env WORDPRESS_DB_PASSWORD="$DATABASE_PASSWORD" \
+           --env WORDPRESS_DB_NAME="$DATABASE_NAME" \
+           --env WORDPRESS_TABLE_PREFIX="wp_" \
+           --env CC_STARTUP_VERBOSITY=4 \
+           cloudycube/docker-wordpress \
+           run-and-enter
+
