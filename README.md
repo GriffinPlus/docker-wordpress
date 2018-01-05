@@ -21,6 +21,19 @@ If you want to persist your WordPress installation, installed addons and uploade
 
 ### Environment Variables
 
+#### STARTUP_VERBOSITY
+
+Determines the verbosity of the *CloudyCube Container Startup System* (see [here](https://github.com/cloudycube/docker-base-supervisor) for details).
+
+- 0 => Logging is disabled.
+- 1 => Only errors are logged.
+- 2 => Errors and warnings are logged.
+- 3 => Errors, warnings and notes are logged.
+- 4 => Errors, warnings, notes and infos are logged.
+- 5 => All messages (incl. debug) are logged.
+
+Default Value: `4`
+
 #### WORDPRESS_DB_HOST
 
 The name of the host running the MySQL/MariaDB database WordPress will use.
