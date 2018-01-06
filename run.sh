@@ -8,7 +8,12 @@ DATABASE_USER='<your database user>'
 DATABASE_PASSWORD='<your database password>'
 DATABASE_NAME='<your database name>'
 
+# add a volume that keeps the actual wordpress installation
+docker volume add my-wordpress-blog
+
+# run the container
 docker run -it \
+           --rm \
            --name wordpress \
            --env WORDPRESS_DB_HOST="$DATABASE_HOST" \
            --env WORDPRESS_DB_USER="$DATABASE_NAME" \
@@ -16,6 +21,7 @@ docker run -it \
            --env WORDPRESS_DB_NAME="$DATABASE_NAME" \
            --env WORDPRESS_TABLE_PREFIX="wp_" \
            --env CC_STARTUP_VERBOSITY=4 \
+           --volume my-wordpress-blog:/var/www/html \
            cloudycube/wordpress \
            run-and-enter
 

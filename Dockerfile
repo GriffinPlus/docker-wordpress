@@ -16,3 +16,6 @@ RUN /bin/bash -c \
     rm -r $WP_DEST_PATH/.git && \
     chown -R www-data:www-data $WP_DEST_PATH \
     '
+
+# keep the wordpress installation in a volume, so installed plugins survive container restarts
+VOLUME [ "/var/www/html" ]
