@@ -1,15 +1,13 @@
 # Docker Image with WordPress 4.x on top of NGINX and PHP7-FPM
 
-[![Build Status](https://travis-ci.org/cloudycube/docker-wordpress.svg?branch=master)](https://travis-ci.org/cloudycube/docker-wordpress) [![Docker 
-Pulls](https://img.shields.io/docker/pulls/cloudycube/wordpress.svg)](https://hub.docker.com/r/cloudycube/wordpress) [![Github 
-Stars](https://img.shields.io/github/stars/cloudycube/docker-wordpress.svg?label=github%20%E2%98%85)](https://github.com/cloudycube/docker-wordpress) [![Github 
-Stars](https://img.shields.io/github/contributors/cloudycube/docker-wordpress.svg)](https://github.com/cloudycube/docker-wordpress) [![Github 
-Forks](https://img.shields.io/github/forks/cloudycube/docker-wordpress.svg?label=github%20forks)](https://github.com/cloudycube/docker-wordpress)
+[![Build Status](https://travis-ci.org/GriffinPlus/docker-wordpress.svg?branch=master)](https://travis-ci.org/GriffinPlus/docker-wordpress) [![Docker 
+Pulls](https://img.shields.io/docker/pulls/GriffinPlus/wordpress.svg)](https://hub.docker.com/r/GriffinPlus/wordpress) [![Github 
+Stars](https://img.shields.io/github/stars/GriffinPlus/docker-wordpress.svg?label=github%20%E2%98%85)](https://github.com/GriffinPlus/docker-wordpress) [![Github 
+Stars](https://img.shields.io/github/contributors/GriffinPlus/docker-wordpress.svg)](https://github.com/GriffinPlus/docker-wordpress) [![Github 
+Forks](https://img.shields.io/github/forks/GriffinPlus/docker-wordpress.svg?label=github%20forks)](https://github.com/GriffinPlus/docker-wordpress)
 
 ## Overview
-This Docker image derives from the [nginx-php7](https://github.com/cloudycube/docker-nginx-php7) image and installs the latest version of [Wordpress 4.x](https://github.com/WordPress/WordPress) that is available on GitHub.
-
-This image belongs to a set of Docker images created for project [CloudyCube](http://www.falk-online.eu/projekte/cloudycube). The homepage is in German only, but you will find everything needed to get it working here as well.
+This Docker image derives from the [nginx-php7](https://github.com/griffinplus/docker-nginx-php7) image and installs the latest version of [Wordpress 4.x](https://github.com/WordPress/WordPress) that is available on GitHub.
 
 ## For Users
 
@@ -23,7 +21,7 @@ If you want to persist your WordPress installation, installed addons and uploade
 
 #### STARTUP_VERBOSITY
 
-Determines the verbosity of the *CloudyCube Container Startup System* (see [here](https://github.com/cloudycube/docker-base-supervisor) for details).
+Determines the verbosity of the *Griffin+ Container Startup System* (see [here](https://github.com/griffinplus/docker-base-supervisor) for details).
 
 - 0 => Logging is disabled.
 - 1 => Only errors are logged.
@@ -89,4 +87,4 @@ The following environment variables force security keys (`AUTH_KEY`, `AUTH_SALT`
 
 #### PHP Specific Settings
 
-Please see the documentation of the [nginx-php7](https://github.com/cloudycube/docker-nginx-php7) image for available configuration options concerning PHP7-FPM.
+Please see the documentation of the [nginx-php7](https://github.com/griffinplus/docker-nginx-php7) image for available configuration options concerning PHP7-FPM.

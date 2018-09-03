@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script starts a new instance of the cloudycube/docker-wordpress container and opens a shell in it.
+# This script starts a new instance of the griffinplus/wordpress container and opens a shell in it.
 # It is useful in cases where some debugging is needed...
 
 DATABASE_HOST='<your database host>'
@@ -22,6 +22,6 @@ docker run -it \
            --env WORDPRESS_TABLE_PREFIX="wp_" \
            --env CC_STARTUP_VERBOSITY=4 \
            --volume my-wordpress-blog:/var/www/html \
-           cloudycube/wordpress \
+           griffinplus/wordpress \
            run-and-enter
 

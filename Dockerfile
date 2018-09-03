@@ -1,4 +1,4 @@
-FROM cloudycube/nginx-php7
+FROM griffinplus/nginx-php7
 MAINTAINER Sascha Falk <sascha@falk-online.eu>
 
 # Copy prepared files into the image

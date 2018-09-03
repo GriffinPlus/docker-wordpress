@@ -2,4 +2,4 @@ version: '2'
 
 services:
   wordpress:
-    image: cloudycube/docker-wordpress
+    image: griffinplus/wordpress

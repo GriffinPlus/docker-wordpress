@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t cloudycube/wordpress .
+docker build -t griffinplus/wordpress .
