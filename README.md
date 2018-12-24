@@ -1,13 +1,13 @@
-# Docker Image with WordPress 4.x on top of NGINX and PHP7-FPM
+# Docker Image with the latest WordPress version on top of NGINX and PHP7.2-FPM
 
-[![Build Status](https://travis-ci.org/GriffinPlus/docker-wordpress.svg?branch=master)](https://travis-ci.org/GriffinPlus/docker-wordpress) [![Docker 
-Pulls](https://img.shields.io/docker/pulls/GriffinPlus/wordpress.svg)](https://hub.docker.com/r/GriffinPlus/wordpress) [![Github 
-Stars](https://img.shields.io/github/stars/GriffinPlus/docker-wordpress.svg?label=github%20%E2%98%85)](https://github.com/GriffinPlus/docker-wordpress) [![Github 
-Stars](https://img.shields.io/github/contributors/GriffinPlus/docker-wordpress.svg)](https://github.com/GriffinPlus/docker-wordpress) [![Github 
-Forks](https://img.shields.io/github/forks/GriffinPlus/docker-wordpress.svg?label=github%20forks)](https://github.com/GriffinPlus/docker-wordpress)
+[![Build Status](https://travis-ci.com/GriffinPlus/docker-wordpress.svg?branch=master)](https://travis-ci.com/GriffinPlus/docker-wordpress)
+[![Docker Pulls](https://img.shields.io/docker/pulls/griffinplus/wordpress.svg)](https://hub.docker.com/r/griffinplus/wordpress)
+[![Github Stars](https://img.shields.io/github/stars/griffinplus/docker-wordpress.svg?label=github%20%E2%98%85)](https://github.com/griffinplus/docker-wordpress)
+[![Github Stars](https://img.shields.io/github/contributors/griffinplus/docker-wordpress.svg)](https://github.com/griffinplus/docker-wordpress)
+[![Github Forks](https://img.shields.io/github/forks/griffinplus/docker-wordpress.svg?label=github%20forks)](https://github.com/griffinplus/docker-wordpress)
 
 ## Overview
-This Docker image derives from the [nginx-php7](https://github.com/griffinplus/docker-nginx-php7) image and installs the latest version of [Wordpress 4.x](https://github.com/WordPress/WordPress) that is available on GitHub.
+This Docker image derives from the [nginx-php7.2](https://github.com/griffinplus/docker-nginx-php7.2) image and installs the latest version of [Wordpress 5.x](https://github.com/WordPress/WordPress) that is available on GitHub.
 
 ## For Users
 
@@ -87,4 +87,4 @@ The following environment variables force security keys (`AUTH_KEY`, `AUTH_SALT`
 
 #### PHP Specific Settings
 
-Please see the documentation of the [nginx-php7](https://github.com/griffinplus/docker-nginx-php7) image for available configuration options concerning PHP7-FPM.
+Please see the documentation of the [nginx-php7.2](https://github.com/griffinplus/docker-nginx-php7.2) image for available configuration options concerning PHP7.2-FPM.

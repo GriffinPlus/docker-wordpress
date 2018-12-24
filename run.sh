@@ -9,7 +9,7 @@ DATABASE_PASSWORD='<your database password>'
 DATABASE_NAME='<your database name>'
 
 # add a volume that keeps the actual wordpress installation
-docker volume add my-wordpress-blog
+docker volume create my-wordpress-blog
 
 # run the container
 docker run -it \

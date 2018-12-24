@@ -11,10 +11,10 @@ from configparser import ConfigParser
 from pwd import getpwnam
 from stat import S_IRUSR, S_IWUSR, S_IXUSR, S_IRGRP, S_IWGRP, S_IXGRP, S_IROTH, S_IWOTH, S_IXOTH
 
-from ..cc_log import Log
-from ..cc_cmdproc import CommandProcessor, PositionalArgument, NamedArgument
-from ..cc_errors import GeneralError, CommandLineArgumentError, FileNotFoundError, IoError, ConfigurationError, EXIT_CODE_SUCCESS
-from ..cc_helpers import read_text_file, write_text_file, replace_php_define, replace_php_variable, generate_password, get_env_setting_bool, get_env_setting_integer, get_env_setting_string
+from ..gp_log import Log
+from ..gp_cmdproc import CommandProcessor, PositionalArgument, NamedArgument
+from ..gp_errors import GeneralError, CommandLineArgumentError, FileNotFoundError, IoError, ConfigurationError, EXIT_CODE_SUCCESS
+from ..gp_helpers import read_text_file, write_text_file, replace_php_define, replace_php_variable, generate_password, get_env_setting_bool, get_env_setting_integer, get_env_setting_string
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------
