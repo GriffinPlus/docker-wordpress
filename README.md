@@ -7,7 +7,7 @@
 [![Github Forks](https://img.shields.io/github/forks/griffinplus/docker-wordpress.svg?label=github%20forks)](https://github.com/griffinplus/docker-wordpress)
 
 ## Overview
-This Docker image derives from the [nginx-php7.2](https://github.com/griffinplus/docker-nginx-php7.2) image and installs the latest version of [Wordpress 5.x](https://github.com/WordPress/WordPress) that is available on GitHub.
+This Docker image derives from the [nginx-php7.2](https://github.com/griffinplus/docker-nginx-php7.2) image and installs the latest version of [Wordpress](https://github.com/WordPress/WordPress) that is available on GitHub.
 
 ## For Users
 
