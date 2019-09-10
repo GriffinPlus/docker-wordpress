@@ -21,7 +21,7 @@ If you want to persist your WordPress installation, installed addons and uploade
 
 #### STARTUP_VERBOSITY
 
-Determines the verbosity of the *Griffin+ Container Startup System* (see [here](https://github.com/griffinplus/docker-base-supervisor) for details).
+Determines the verbosity of the *Griffin+ Container Startup System* (see [here](https://github.com/GriffinPlus/docker-base/tree/master/base) for details).
 
 - 0 => Logging is disabled.
 - 1 => Only errors are logged.
